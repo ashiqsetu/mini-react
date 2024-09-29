@@ -1,1 +1,1 @@
-Live Preview: https://minireact.netlify.app/about
+Live Preview: https://minireact.netlify.app
