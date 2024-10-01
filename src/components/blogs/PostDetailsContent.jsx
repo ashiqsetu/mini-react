@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Carousel from 'react-bootstrap/Carousel';
 
-function PostDetailsContent({ id, state, fullWidth }) {
+function PostDetailsContent({ state, fullWidth }) {
     const navigate = useNavigate();
 
     const [index, setIndex] = useState(0);
@@ -223,25 +223,25 @@ function PostDetailsContent({ id, state, fullWidth }) {
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt perferendis modi architecto praesentium ad illum corporis. Fugiat expedita, alias qui corporis animi iusto pariatur deleniti non veniam aperiam quidem id. Exercitationem fuga, harum voluptates porro minima vitae accusamus quam unde?</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi perspiciatis vero deleniti quaerat quia. Nam, impedit, minima! Voluptatibus commodi ullam praesentium placeat, sapiente cumque. Sint at neque, eveniet, consequatur dignissimos provident dolor natus perferendis ratione unde temporibus. Quia, repudiandae, voluptate.</p>
                             <div className="post-tag">
-                                <a href="#">design</a>
-                                <a href="#">game</a>
-                                <a href="#">robotics</a>
+                                <button>design</button>
+                                <button>game</button>
+                                <button>robotics</button>
                             </div>
                             <div className="post-footer">
                                 <div className="like-post">
                                     <p>Like:</p>
-                                    <a className="like-count" href="#">
+                                    <button className="like-count">
                                         <i className="fa fa-heart-o"></i>
                                         <span className="heart-number">0</span>
-                                    </a>
+                                    </button>
                                 </div>
                                 <div className="share-post">
                                     <ul className="share-site-list">
                                         <li>share:</li>
-                                        <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                                        <li><a href="#" onClick={(e) => e.preventDefault()}><i className="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" onClick={(e) => e.preventDefault()}><i className="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" onClick={(e) => e.preventDefault()}><i className="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#" onClick={(e) => e.preventDefault()}><i className="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -123,10 +123,10 @@ function Blog({ bgBackground, SectionTitle, pagination, showAllBtn }) {
                                                         e.preventDefault();
                                                         handlePostClick(post);
                                                     }}>read more</a>
-                                                    <a className="like-count" href="#">
+                                                    <button className="like-count">
                                                         <i className="fa fa-heart-o"></i>
                                                         <span className="heart-number">{post.like}</span>
-                                                    </a>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </article>

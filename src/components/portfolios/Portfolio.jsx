@@ -13,7 +13,7 @@ function Portfolio({ showAll }) {
 
     useEffect(() => {
         setActivePortfolios(portfolios);
-        setNewPortfolios([... new Set(portfolios.map((portfolio) => portfolio.category))]);
+        setNewPortfolios([...new Set(portfolios.map((portfolio) => portfolio.category))]);
 
         const handleMouseMove = (event) => {
             const mouseX = event.clientX;
@@ -76,7 +76,7 @@ function Portfolio({ showAll }) {
                                     }
                                 </ul>
                             </div>
-                            <div className="portfolio-grid clearfix">
+                            <div className="portfolio-grid">
                                 {
                                     activePortfolios.length > 0
                                         ? activePortfolios.map((portfolio, index) => (

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function BlogSidebar({ leftSidebarStatus, rightSidebarStatus, postDetails, blogs }) {
 
@@ -30,10 +31,10 @@ function BlogSidebar({ leftSidebarStatus, rightSidebarStatus, postDetails, blogs
                         <div className="author-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet suscipit voluptatum, quis labore amet laborum sequi nisi, odio ipsum molestias.</p>
                             <ul className="social-menu">
-                                <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+                                <li><a href="#" onClick={(e) => e.preventDefault()}><i className="fa fa-facebook"></i></a></li>
+                                <li><a href="#" onClick={(e) => e.preventDefault()}><i className="fa fa-twitter"></i></a></li>
+                                <li><a href="#" onClick={(e) => e.preventDefault()}><i className="fa fa-instagram"></i></a></li>
+                                <li><a href="#" onClick={(e) => e.preventDefault()}><i className="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -41,44 +42,44 @@ function BlogSidebar({ leftSidebarStatus, rightSidebarStatus, postDetails, blogs
                 <aside className="single-widget">
                     <h4 className="widget-title">Categories</h4>
                     <ul className="post-cat-list">
-                        <li><a href="#">design <span>[9]</span></a></li>
-                        <li><a href="#">animation <span>[5]</span></a></li>
-                        <li><a href="#">game <span>[7]</span></a></li>
-                        <li><a href="#">robotics <span>[6]</span></a></li>
+                        <li><button>design <span>[9]</span></button></li>
+                        <li><button>animation <span>[5]</span></button></li>
+                        <li><button>game <span>[7]</span></button></li>
+                        <li><button>robotics <span>[6]</span></button></li>
                     </ul>
                 </aside>
                 <aside className="single-widget">
                     <h4 className="widget-title">Tags</h4>
                     <div className="tags">
-                        <a href="#">design</a>
-                        <a href="#">template</a>
-                        <a href="#">theme-forest</a>
-                        <a href="#">game</a>
-                        <a href="#">art</a>
-                        <a href="#">robotics</a>
+                        <button>design</button>
+                        <button>template</button>
+                        <button>theme-forest</button>
+                        <button>game</button>
+                        <button>art</button>
+                        <button>robotics</button>
                     </div>
                 </aside>
                 <aside className="single-widget">
                     <h4 className="widget-title">Recent Posts</h4>
                     <div className="recent-post-widget">
                         <div className="single-post-widget">
-                            <a href="#"><img src="/assets/img/blog/widget/1.jpg" alt="" /></a>
+                            <Link to=""><img src="/assets/img/blog/widget/1.jpg" alt="" /></Link>
                             <div className="post-widget-content">
-                                <h5><a href="#">simple post title</a></h5>
+                                <h5><Link to="">simple post title</Link></h5>
                                 <p>Category: <a href='#'>Design</a></p>
                             </div>
                         </div>
                         <div className="single-post-widget">
-                            <a href="#"><img src="/assets/img/blog/widget/1.jpg" alt="" /></a>
+                            <Link to=""><img src="/assets/img/blog/widget/1.jpg" alt="" /></Link>
                             <div className="post-widget-content">
-                                <h5><a href="#">simple post title</a></h5>
+                                <h5><Link to="">simple post title</Link></h5>
                                 <p>Category: <a href='#'>Design</a></p>
                             </div>
                         </div>
                         <div className="single-post-widget">
-                            <a href="#"><img src="/assets/img/blog/widget/1.jpg" alt="" /></a>
+                            <Link to=""><img src="/assets/img/blog/widget/1.jpg" alt="" /></Link>
                             <div className="post-widget-content">
-                                <h5><a href="#">simple post title</a></h5>
+                                <h5><Link to="">simple post title</Link></h5>
                                 <p>Category: <a href='#'>Design</a></p>
                             </div>
                         </div>

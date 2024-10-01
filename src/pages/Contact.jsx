@@ -1,9 +1,14 @@
 import React from 'react'
 import Breadcrumbs from '../components/Breadcrumbs'
+import PageTitle from '../components/common/PageTitle';
 
 function Contact() {
     return (
         <>
+            {/* Page title */}
+            <PageTitle title='Mini | Contact'/>
+
+            {/* Breadcrumb area start */}
             <Breadcrumbs page="Contact" title="Mini's Contact" />
 
             {/* Page content area start */}
@@ -34,8 +39,8 @@ function Contact() {
                                         <i className="bi bi-envelop"></i>
                                         <h5>email</h5>
                                         <ul className="mail-address">
-                                            <li><a href="#">company.oxygens@gmail.com</a></li>
-                                            <li><a href="#">company.oxygens@gmail.com</a></li>
+                                            <li><a href="mailto:company.oxygens@gmail.com">company.oxygens@gmail.com</a></li>
+                                            <li><a href="mailto:company.oxygens@gmail.com">company.oxygens@gmail.com</a></li>
                                         </ul>
                                     </div>
                                 </div>

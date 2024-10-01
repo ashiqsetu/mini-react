@@ -1,10 +1,14 @@
 import React from 'react'
 import Breadcrumbs from '../components/Breadcrumbs'
 import Blog from '../components/blogs/Blog'
+import PageTitle from '../components/common/PageTitle';
 
 function Blogs() {
     return (
         <>
+            {/* Page title */}
+            <PageTitle title='Mini | Blogs'/>
+
             {/* Breadcrumb area start */}
             <Breadcrumbs page="Blog" title="Mini's Blogs" />
             {/* Breadcrumb area end */}

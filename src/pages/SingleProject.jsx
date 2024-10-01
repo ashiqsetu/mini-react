@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import Breadcrumbs from '../components/Breadcrumbs'
 import { useParams, useLocation } from 'react-router-dom'
 import Carousel from 'react-bootstrap/Carousel';
+import PageTitle from '../components/common/PageTitle';
 
 function SinglePortfolio() {
 
-    const { id } = useParams();
+    // const { id } = useParams();
     const { state } = useLocation();
 
     const [index, setIndex] = useState(0);
@@ -16,6 +17,9 @@ function SinglePortfolio() {
 
     return (
         <>
+            {/* Page title */}
+            <PageTitle title={`Mini | ${state.title}`}/>
+
             {/* Breadcrumb area start */}
             <Breadcrumbs page="Single Project" title="Mini's Single Project" />
             {/* Breadcrumb area end */}
@@ -64,7 +68,7 @@ function SinglePortfolio() {
                                             <i className="ti-layers"></i><span>Skills:</span>game + robotics
                                         </li>
                                         <li>
-                                            <i className="ti-link"></i><span>Demo: </span><a href="#">Site Link</a>
+                                            <i className="ti-link"></i><span>Demo: </span><a href="#" onClick={(e) => e.preventDefault()}>Site Link</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -95,8 +99,8 @@ function SinglePortfolio() {
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officiis, laborum distinctio. Cupiditate sunt nesciunt ipsa, sequi mollitia, officiis dicta odit omnis assumenda similique, qui doloribus! Iste aspernatur nihil placeat cumque laboriosam odio, accusantium quidem praesentium vel, iure illo ratione quibusdam nulla sint repellendus, dolore voluptatibus! Assumenda asperiores recusandae accusamus.</p>
                                 </div>
                                 <div className="single-project-link">
-                                    <a href="#" className="project-link prev-project"><i className="fa fa-angle-left"></i>previous project</a>
-                                    <a href="#" className="project-link next-project">next project<i className="fa fa-angle-right"></i></a>
+                                    <button className="project-link prev-project"><i className="fa fa-angle-left"></i>previous project</button>
+                                    <button className="project-link next-project">next project<i className="fa fa-angle-right"></i></button>
                                 </div>
                             </div>
                         </div>
